@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="left">
+  <p><a href="https://www.onlineclass.com">START CLASS HERE</a></p>
+</div>
+
+<div class="main">
+  <p><a href="https://www.exm.com">START EXAMINATION HERE</a></p>
+</div>
+
+<div class="right">
+  <p><a href="https://www.resultchecker.com">CHECK RESULT HERE</a></p>
+</div>
+<br><br>
+<h2>Dear Student, welcome..</h2>
+<p>Login below your details</p>
+<form>
+  USERNAME:<br>
+  <input type="text" name="firstname">
+  <br>
+  PASSWORD:<br>
+  <input type="text" name="lastname"><br>
+E-MAIL:<br>
+ <input type="email" name="email">
+<br>
+Gender
+<select name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="option">Other</option>
+    <option value="rather not say">Rather not say</option>
+  </select>
+<br><br>
+  <input type="submit" value="Submit">
+</form>
+<p><a href="https://forgetnpassword.com">Reset password</a><br><a href="https://forgetnpassword.com">New Registration</a></p>
+</body>
+
+<!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:33:50 GMT -->
+</html>
