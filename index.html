@@ -7,8 +7,11 @@
   <title>Jorsh</title>
 </head>
   <body>
-  <div class="wrapper">
-      <div class="sidenav">
+ <div class="menu-icon" onclick="toggleMenu()">&#9776; Menu</div> <!-- Menu icon -->
+ <div class="wrapper">
+      <div  id="myNav" class="sidenav">
+   <div class="closebtn" onclick="toggleMenu()">&times;</div> <!-- Menu icon -->
+
       <img
         src="/avatar_g2.jpg"
         style="
@@ -293,5 +296,13 @@
 </div>
    </div>
   </div>
+
+
+<script>
+  function toggleMenu() {
+    const sidenav = document.getElementById('myNav');
+    sidenav.classList.toggle('open');
+  }
+</script>
   </body>
 </html>
